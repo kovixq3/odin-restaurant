@@ -53,12 +53,17 @@ body {
     background-image: url('background.jpg');
 }
 
-#content {
+#header {
     padding: .5rem;
     display: flex;
     flex-direction: column;
     align-items: center;   
     gap: 1rem;
+}
+
+#content {
+    display: grid;
+    justify-items: center;
 }
 
 .tabs-control-ctner {
@@ -108,6 +113,13 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 200px);
     grid-template-rows: repeat(3, 200px);
+    gap: 1rem;
+}
+
+.item {
+    background-color: rgb(255, 255, 255);
+    display: grid;
     justify-items: center;
     align-items: center;
+    border-radius: 1rem;
 }
